@@ -1,0 +1,17 @@
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Infrastructure.deps.json
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Infrastructure.dll
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Infrastructure.pdb
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Application.dll
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Domain.dll
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Domain.pdb
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/bin/Debug/net8.0/Application.pdb
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastr.15EFFBFE.Up2Date
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.dll
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
+/Users/nicolasmendez/Desktop/ToDoApp/src/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
