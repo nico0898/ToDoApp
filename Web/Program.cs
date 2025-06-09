@@ -1,8 +1,13 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
+using TodoApp.Infrastructure.Services;
+using Application.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddScoped<IToDoService, ToDoService>();
 
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
