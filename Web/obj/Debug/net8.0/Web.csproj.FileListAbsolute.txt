@@ -57,7 +57,6 @@
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Mono.TextTemplating.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/NuGet.Common.dll
@@ -76,14 +75,11 @@
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Composition.Runtime.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Composition.TypedParts.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Drawing.Common.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Memory.Data.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Runtime.Caching.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Security.Permissions.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Windows.Extensions.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/af/Humanizer.resources.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/ar/Humanizer.resources.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/az/Humanizer.resources.dll
@@ -229,11 +225,7 @@
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
-/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Application.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Domain.dll
 /Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Infrastructure.dll
@@ -265,3 +257,12 @@
 /Users/nicolasmendez/Desktop/ToDoApp/Web/obj/Debug/net8.0/Web.pdb
 /Users/nicolasmendez/Desktop/ToDoApp/Web/obj/Debug/net8.0/Web.genruntimeconfig.cache
 /Users/nicolasmendez/Desktop/ToDoApp/Web/obj/Debug/net8.0/ref/Web.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Formats.Asn1.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/System.Text.Json.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/nicolasmendez/Desktop/ToDoApp/Web/obj/Debug/net8.0/Web.RazorAssemblyInfo.cache
+/Users/nicolasmendez/Desktop/ToDoApp/Web/obj/Debug/net8.0/Web.RazorAssemblyInfo.cs

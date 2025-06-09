@@ -3,24 +3,29 @@ using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using TodoApp.Infrastructure.Services;
 using Application.Interfaces;
+using Web.Areas.Identity.Data;
+using Web.Components;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddScoped<IToDoService, ToDoService>();
 
 // Add DbContext
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<Infrastructure.Data.ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add Identity
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddEntityFrameworkStores<Infrastructure.Data.ApplicationDbContext>();
 
 // Blazor
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+
+
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents(); // <- ¡Esta parte es obligatoria!
 
 var app = builder.Build();
 
@@ -29,7 +34,13 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseAntiforgery();
+
+app.MapRazorPages(); // ¡NECESARIO para que funcione el scaffold!
+
 app.MapBlazorHub();
-app.MapFallbackToPage("/_Host");
+
+app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode(); // <- ¡Esta también es obligatoria!
 
 app.Run();

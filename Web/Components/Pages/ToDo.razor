@@ -1,0 +1,92 @@
+@page "/todo"
+@using Application.Interfaces
+@using Domain.Entities
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IToDoService ToDoService
+
+<h3>Mis Tareas</h3>
+
+@if (!isAuthenticated)
+{
+    <p>Por favor, iniciá sesión para ver tus tareas.</p>
+}
+else
+{
+    <EditForm Model="newTodo" OnValidSubmit="AddTodo">
+        <InputText @bind-Value="newTodo.Title" placeholder="Nueva tarea..." class="form-control" />
+        <button type="submit" class="btn btn-primary mt-2">Agregar</button>
+    </EditForm>
+
+    <ul class="list-group mt-3">
+    @foreach (var todo in todos)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span style="text-decoration: @(todo.IsDone ? "line-through" : "none")">
+                @todo.Title
+            </span>
+            <div>
+                <button class="btn btn-sm btn-success me-2" @onclick="() => ToggleTodo(todo.Id)">✓</button>
+                <button class="btn btn-sm btn-danger" @onclick="() => DeleteTodo(todo.Id)">🗑️</button>
+            </div>
+        </li>
+    }
+</ul>
+
+}
+
+@code {
+    private List<ToDoItem> todos = new();
+    private ToDoItem newTodo = new();
+    private bool isAuthenticated = false;
+    private string? userId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        isAuthenticated = user.Identity?.IsAuthenticated ?? false;
+
+        if (isAuthenticated)
+        {
+            userId = user.FindFirst("sub")?.Value ?? user.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value;
+
+            if (!string.IsNullOrEmpty(userId))
+            {
+                todos = await ToDoService.GetTodosAsync(userId);
+            }
+        }
+    }
+
+    private async Task AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo.Title) && !string.IsNullOrEmpty(userId))
+        {
+            newTodo.UserId = userId;
+            await ToDoService.AddTodoAsync(newTodo);
+            newTodo = new ToDoItem();
+            todos = await ToDoService.GetTodosAsync(userId);
+        }
+    }
+
+    private async Task ToggleTodo(int id)
+    {
+        if (!string.IsNullOrEmpty(userId))
+        {
+            await ToDoService.ToggleTodoAsync(id, userId);
+            todos = await ToDoService.GetTodosAsync(userId);
+        }
+    }
+
+    private async Task DeleteTodo(int id)
+    {
+        if (!string.IsNullOrEmpty(userId))
+        {
+            await ToDoService.DeleteTodoAsync(id, userId);
+            todos = await ToDoService.GetTodosAsync(userId);
+        }
+    }
+
+}
